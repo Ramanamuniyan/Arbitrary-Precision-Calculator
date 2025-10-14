@@ -169,8 +169,4 @@ Example:
 💻 Focused on C programming and data structures  
 📂 Designed for system-level understanding of arithmetic using linked lists  
 
----
 
-## 📜 License
-
-This project is open-source and available under the **MIT License**.
