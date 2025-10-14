@@ -66,8 +66,12 @@ int main(int argc ,char *argv[])
     ptrop2++;
     }
 
+    if(flag1)
+    printf("-");
     print_list(op1_head);
     printf(" %s ",ptrop);
+    if(flag2)
+    printf("-");
     print_list(op2_head);
     printf(" = ");
 
