@@ -29,7 +29,7 @@ void errorprint(void);
 void deletelist(Dlist **head,Dlist **tail);
 int remove_leading_zeros(Dlist **res_head,Dlist **res_tail);
 void copy_list(Dlist *src_head, Dlist **dest_head, Dlist **dest_tail);
-
+void freefun(Dlist *head,Dlist *tail);
 
 int isvalid(char argv[]);
 int operator_check(char argv[]);

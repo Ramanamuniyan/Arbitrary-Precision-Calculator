@@ -66,12 +66,8 @@ int main(int argc ,char *argv[])
     ptrop2++;
     }
 
-    if(flag1)
-    printf("-");
     print_list(op1_head);
     printf(" %s ",ptrop);
-    if(flag2)
-    printf("-");
     print_list(op2_head);
     printf(" = ");
 
@@ -192,4 +188,10 @@ case '%':
 	default:
 	    printf("Invalid Input:-( Try again...\n");
     }
+
+
+    freefun(op1_head,op1_tail);
+    op1_head=op1_tail=NULL;
+    freefun(op2_head,op2_tail);
+    op2_head=op2_tail=NULL;
 }

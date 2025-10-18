@@ -183,3 +183,17 @@ while (*res_head && (*res_head)->data == 0 && (*res_head)->next != NULL)
 	}
     return SUCCESS;
 }
+
+void freefun(Dlist *head,Dlist *tail)
+{
+
+    if(!head)
+    return ;
+        freefun((head)->next,tail);
+        free(head);
+    
+
+    // *head=NULL;
+    // *tail=NULL;
+
+}
