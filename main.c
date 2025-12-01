@@ -74,12 +74,15 @@ int main(int argc ,char *argv[])
 
 
     if(*ptrop=='+')
-    if((flag1 ^ flag2) )
-    *ptrop='-';
-
-    if(*ptrop=='-')
-    if((flag1 ^ flag2) )
-    *ptrop='+';
+    {
+        if((flag1 ^ flag2) )
+        *ptrop='-';
+    }
+    else if(*ptrop=='-')
+    {
+        if((flag1 ^ flag2) )
+        *ptrop='+';
+    }
 
     
 
@@ -179,10 +182,12 @@ int main(int argc ,char *argv[])
 case '%':	
 	    /* call the function to perform the division operation */
         if(reminder(&op1_head,&op1_tail,&op2_head,&op2_tail,&res_head,&res_tail) == SUCCESS)  
-        // { if(flag1 ^ flag2)
-        //   printf("-");
+        { 
+            if(flag1)
+                printf("-");
             print_list(res_head);
-        printf("\n");
+            printf("\n");
+        }
        
 	    break;
 	default:
